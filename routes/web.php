@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,5 +24,8 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 // Home routes
-Route::get('/home', fn () => redirect(route('home')));
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('home', fn () => redirect(route('home')));
+Route::get('', [HomeController::class, 'index'])->name('home');
+
+// Contact routes
+Route::get('contact', [ContactController::class, 'index'])->name('contact');

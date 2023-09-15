@@ -15,7 +15,7 @@
                     {{ __('+37066001110') }}
                 </li>
             </ul>
-            <a href="#" class="btn btn-light mt-2" style="font-size: 16px; padding: 10px 22px">
+            <a href="{{ route('contact') }}" class="btn btn-light mt-2" style="font-size: 16px; padding: 10px 22px">
                 {{ __('Susisiekite') }}
             </a>
         </div>

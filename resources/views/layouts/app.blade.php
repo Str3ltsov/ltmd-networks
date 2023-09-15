@@ -24,7 +24,7 @@
 
     @stack('styles')
 </head>
-<body style="width: 100%; min-height: 100vh, display: flex; flex-direction: column">
+<body style="width: 100%; min-height: 100vh, display: flex; flex-direction: column; background-color: #f6f6f6">
 
     @include('layouts.navbar')
 
