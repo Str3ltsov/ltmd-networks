@@ -25,7 +25,8 @@ class SubmitContactFormRequest extends FormRequest
             'name' => 'required|string',
             'email' => 'required|email:rfc',
             'title' => 'required|string',
-            'message' => 'required|string'
+            'message' => 'required|string',
+            'g-recaptcha-response' => 'required|captcha'
         ];
     }
 
@@ -44,7 +45,7 @@ class SubmitContactFormRequest extends FormRequest
             'title.required' => 'Pavadinimo laukas yra privalomas.',
             'title.string' => 'Pavadinimo lauke įvestis turi būti string',
             'message.required' => 'Žinuties laukas yra privalomas.',
-            // 'message.max' => 'Žinuties laukas negali būti ilgesnis nei 255 simboliai.'
+            'g-recaptcha-response' => 'g-recaptcha-response laukas yra privalomas.'
         ];
     }
 }

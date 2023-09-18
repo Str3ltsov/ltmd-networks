@@ -37,6 +37,13 @@
             <div class="text-danger pt-1">{{ $message }}</div>
         @enderror
     </div>
+    <div class="col-12 mb-4">
+        {!! NoCaptcha::renderJs() !!}
+        {!! NoCaptcha::display() !!}
+        @error('g-recaptcha-response')
+            <div class="text-danger pt-1">{{ $message }}</div>
+        @enderror
+    </div>
     <div class="col-12">
         <button type="submit" class="btn btn-dark" style="font-size: 16px; padding: 8px 20px">
             {{ __('Siųsti') }}
