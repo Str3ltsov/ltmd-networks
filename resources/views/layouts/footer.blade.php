@@ -1,4 +1,4 @@
-<footer class="bg-dark px-4">
+<footer class="bg-dark px-4 mt-auto">
     <div class="container">
         <div class="d-flex justify-content-center align-items-start py-4" style="gap: 100px">
             <ul class="d-flex flex-column gap-2 my-2 ps-0 footer-text" style="list-style: none">

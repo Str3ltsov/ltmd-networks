@@ -29,3 +29,4 @@ Route::get('', [HomeController::class, 'index'])->name('home');
 
 // Contact routes
 Route::get('contact', [ContactController::class, 'index'])->name('contact');
+Route::post('contact', [ContactController::class, 'submit'])->name('submitContactForm');
