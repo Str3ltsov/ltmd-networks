@@ -6,6 +6,7 @@
 
 @section('content')
     <div class="container py-5">
+        @include('messages')
         <div class="card-grid-container">
             <div class="card px-0 border-0 rounded-0 card-max-width">
                 <img src="{{ asset('assets/network.jpg') }}" class="card-img-top rounded-0" alt="{{ __('Network') }}">
